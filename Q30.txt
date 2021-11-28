@@ -1,0 +1,48 @@
+1.	. The first thing of all works pending would be to merge the user logon information
+, person information (including emails, phone numbers) 
+and products (of course, add category, colors) to WWI database. 
+Include screenshot, mapping and query.
+
+Human body requires physical activity to remain healthy and active. People get used to travel by fuel vehicles. 
+Our company really cares about physical active employees specially in our sale’s team.
+We decided to provide our employees and customers with small bikes so they may commute 
+short distances by bike if they desire. Our goal is to help environment and human health.
+
+I was working individually and was not able to finish this question. But my scenario to do this question is first to make a 
+temporary table and insert the data from the source table to my #temptable and then move to target table.
+
+
+
+
+SOURCE TABLE: AdvantureWorks2019					TARGET TABLE:WW1         
+
+Person.Address								Application.Cities	     
+Person.ContactType							Application.Countires
+Person.EmailAddress							Application.StateProvinces
+Person.Password								Application.People
+Person.Person
+Person.PersonPhone
+Person.StateProvince
+
+Production.Product							Warehouse.StockGroups
+Production.ProductCategory						Warehouse.Colors
+									Warehouse.StockItems
+									Warehouse.StockItemTransaction
+													
+DROP TABLE #temperson
+GO
+CREATE TABLE #temperson(
+personID int,
+fullname nvarchar(50),
+email_address nvarchar(256),
+username nvarchar(50),
+hashedpassword varbinary(max),
+phonenumber nvarchar(20) )
+
+
+
+DROP TABLE #tempproduct
+CREATE TABLE #tempproduct(
+productID int,
+Name nvarchr(50),
+color nvarchar(15) )
