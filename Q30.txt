@@ -9,7 +9,7 @@ We decided to provide our employees and customers with small bikes so they may c
 short distances by bike if they desire. Our goal is to help environment and human health.
 
 I was working individually and was not able to finish this question. But my scenario to do this question is first to make a 
-temporary table and insert the data from the source table to my #temptable and then move to target table.
+temporary table and insert the data from the source table to my #temptable and then merge to target table.
 
 
 
